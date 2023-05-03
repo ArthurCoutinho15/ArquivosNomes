@@ -17,7 +17,7 @@ public class Arquivos {
         buffRead.close();
     }
 
-    public static void escritor(String path) throws IOException {
+    public static void escritor(String path ) throws IOException {
 
 
         BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path));
@@ -29,12 +29,13 @@ public class Arquivos {
         buffWrite.close();
     }
 
-    public static void nomeSobrenome(String path1, String path2, String path3) throws IOException {
-        BufferedReader buffRead = new BufferedReader(new FileReader(path1));
+    public static void nomeSobrenome(String path) throws IOException {
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = "";
         while(true){
             if(linha != null){
                 System.out.println(linha);
+
             }
             else
                 break;
